@@ -20,26 +20,26 @@ this project is one of sensor fusion Nano-degree projects.
 ![f_f_t](https://i.ibb.co/jTSpWwr/3.png)
 
 3. 2D-CFAR
-1. Determine the number of Training cells
+- Determine the number of Training cells
  ```
  Tr =  10;
  Td = 8;
 ```
-2. Determine the number of Guard cells
+- Determine the number of Guard cells
 ```
 Gr =  4;
 Gd =  4;
 
 ```
-3. offset the threshold by SNR value in dB
+- offset the threshold by SNR value in dB
 ```
 offset =  1.4 ;
 ```
-4. Create a vector to store noise_level for each iteration on training cells
+- Create a vector to store noise_level for each iteration on training cells
 ```
 noise_level = zeros(1,1);
 ```
-5. design a loop such that it slides the CUT across range doppler map by
+- design a loop such that it slides the CUT across range doppler map by
 giving margins at the edges for Training and Guard Cells.
 For every iteration sum the signal level within all the training
 cells. To sum convert the value from logarithmic to linear using db2pow
@@ -79,7 +79,7 @@ for i = Tr+Gr+1:(Nr/2)-(Gr+Tr)
     end
 end
 ```
-6. The process above will generate a thresholded block, which is smaller 
+- The process above will generate a thresholded block, which is smaller 
 than the Range Doppler Map as the CUT cannot be located at the edges of
 matrix. Hence,few cells will not be thresholded. To keep the map size same
 set those values to 0.
@@ -87,7 +87,7 @@ set those values to 0.
 RDM(union(1:(Tr+Gr),end-(Tr+Gr-1):end),:) = 0;  
 RDM(:,union(1:(Td+Gd),end-(Td+Gd-1):end)) = 0;
 ```
-7.display the CFAR output using the Surf function like we did for Range
+- display the CFAR output using the Surf function like we did for Range
 doppler Response output.
 ![CFAR](https://i.ibb.co/gwbVHCC/1.png)
 ### System requirements
