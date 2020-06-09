@@ -14,9 +14,10 @@ this project is one of sensor fusion Nano-degree projects.
 1. after performing 1st FFT
 ![fft1](https://i.ibb.co/K2MwtjJ/2.png)
 2. the second FFT
-![fft2](https://i.ibb.co/jTSpWwr/3.png)
+
+![f_f_t](https://i.ibb.co/jTSpWwr/3.png)
 3. 2D-CFAR
- 1. Determine the number of Training cells
+1. Determine the number of Training cells
  ```
  Tr =  10;
  Td = 8;
