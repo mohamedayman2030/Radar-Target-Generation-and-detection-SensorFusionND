@@ -30,6 +30,8 @@ this project is one of sensor fusion Nano-degree projects.
 - we use RDM[x,y] as a matrix for implementing CFAR
 - if the value is not 0 or 1 assign it to 0
 - display the 2D-CFAR
+
 ![CFAR](https://i.ibb.co/gwbVHCC/1.png)
+
 ### System requirements
 matlab or octave setup
