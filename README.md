@@ -12,10 +12,13 @@ this project is one of sensor fusion Nano-degree projects.
 
 ### Results
 1. after performing 1st FFT
+
 ![fft1](https://i.ibb.co/K2MwtjJ/2.png)
+
 2. the second FFT
 
 ![f_f_t](https://i.ibb.co/jTSpWwr/3.png)
+
 3. 2D-CFAR
 1. Determine the number of Training cells
  ```
@@ -87,3 +90,5 @@ RDM(:,union(1:(Td+Gd),end-(Td+Gd-1):end)) = 0;
 7.display the CFAR output using the Surf function like we did for Range
 doppler Response output.
 ![CFAR](https://i.ibb.co/gwbVHCC/1.png)
+### System requirements
+matlab or octave setup
